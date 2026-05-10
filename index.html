@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TeQniko Engineering — Industrial Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">⚙</div>
+      <div class="logo-text">
+        <span class="logo-main">TeQniko</span>
+        <span class="logo-sub">ENGINEERING</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#customers">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" onclick="window.location.href='cart.html'">
+      <span class="cart-icon">📋</span>
+      <span>Enquiry</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag">EST. 2019 — FARIDABAD, INDIA</div>
+    <h1 class="hero-title">Industrial<br/><span class="accent">Precision.</span><br/>Delivered.</h1>
+    <p class="hero-desc">Special Purpose Welding Rods · Precision Abrasives · High-End Pneumatic Tools · Mould & Die Parts</p>
+    <a href="#products" class="hero-cta">Browse Products</a>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-circle c1"></div>
+    <div class="hero-circle c2"></div>
+    <div class="hero-circle c3"></div>
+    <div class="hero-gear">⚙</div>
+  </div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="products-section" id="products">
+  <div class="section-header">
+    <h2>Our <span class="accent">Products</span></h2>
+    <p>Select products and raise a query — our team will connect with you</p>
+  </div>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-cat="all">All Products</button>
+    <button class="filter-btn" data-cat="welding">Welding Rods & Wires</button>
+    <button class="filter-btn" data-cat="abrasives">Abrasives</button>
+    <button class="filter-btn" data-cat="stones">Stones</button>
+    <button class="filter-btn" data-cat="pneumatic">Pneumatic Tools</button>
+    <button class="filter-btn" data-cat="mould">Mould & Die Parts</button>
+  </div>
+
+  <div class="products-grid" id="productsGrid">
+    <!-- Injected by JS -->
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-text">
+      <div class="section-tag">About Us</div>
+      <h2>Built on <span class="accent">Quality</span> & Precision</h2>
+      <p>Established in 2019, TeQniko Engineering is a trusted trader and developer of industrial welding, abrasive, and pneumatic products. All products are developed using the latest technology and high-quality materials.</p>
+      <p>We develop custom welding rods and machines as per application needs — delivering the highest quality at competitive prices.</p>
+      <div class="about-stats">
+        <div class="stat"><span>2019</span><label>Est.</label></div>
+        <div class="stat"><span>50+</span><label>Products</label></div>
+        <div class="stat"><span>10+</span><label>Clients</label></div>
+        <div class="stat"><span>4</span><label>Categories</label></div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="about-card">
+        <div class="about-card-icon">🔧</div>
+        <h3>Welding Solutions</h3>
+        <p>MS, SS, Cast Iron, Hard Facing, Aluminium & more</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">⚙</div>
+        <h3>Pneumatic Tools</h3>
+        <p>Die Grinders, Sanders, Impact Wrenches</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🔩</div>
+        <h3>Mould & Die</h3>
+        <p>Standard parts for precision tooling</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients-section" id="customers">
+  <div class="section-header">
+    <h2>Our Valuable <span class="accent">Clients</span></h2>
+    <p>Trusted by leading industrial companies across India</p>
+  </div>
+  <div class="clients-grid">
+    <div class="client-card">Sonalika International</div>
+    <div class="client-card">Escorts Kubota Ltd.</div>
+    <div class="client-card">BSL</div>
+    <div class="client-card">Saket Fabs</div>
+    <div class="client-card">Ramco Steels Pvt. Ltd.</div>
+    <div class="client-card">Talbros</div>
+    <div class="client-card">Pranav Vikas India</div>
+    <div class="client-card">Panchal Engineering</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2>Get In <span class="accent">Touch</span></h2>
+    <div class="contact-details">
+      <div class="contact-item">
+        <span class="c-icon">📍</span>
+        <span>E8, 1st Floor, Sanjay Colony, Sector 23-24, Faridabad</span>
+      </div>
+      <div class="contact-item">
+        <span class="c-icon">📞</span>
+        <span>9910270342 &nbsp;|&nbsp; 9871440208</span>
+      </div>
+      <div class="contact-item">
+        <span class="c-icon">🏢</span>
+        <span>GSTIN: 06AVQPR6052C1ZF</span>
+      </div>
+    </div>
+    <button class="hero-cta" onclick="window.location.href='cart.html'">Raise an Enquiry →</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 TeQniko Engineering, Faridabad. All rights reserved.</p>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

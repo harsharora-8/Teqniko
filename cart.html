@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Enquiry — TeQniko Engineering</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body class="cart-page">
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer">
+      <div class="logo-icon">⚙</div>
+      <div class="logo-text">
+        <span class="logo-main">TeQniko</span>
+        <span class="logo-sub">ENGINEERING</span>
+      </div>
+    </div>
+    <a href="index.html" class="back-link">← Back to Products</a>
+  </div>
+</header>
+
+<main class="cart-main">
+  <div class="cart-container">
+
+    <!-- LEFT: Selected Products -->
+    <div class="cart-left">
+      <h2 class="cart-title">Your <span class="accent">Enquiry</span> Basket</h2>
+      <p class="cart-subtitle">Products you've selected for enquiry</p>
+
+      <div id="cartItems" class="cart-items">
+        <!-- Injected by JS -->
+      </div>
+
+      <div class="cart-empty" id="cartEmpty" style="display:none">
+        <div class="empty-icon">📋</div>
+        <p>No products added yet.</p>
+        <a href="index.html" class="hero-cta">Browse Products</a>
+      </div>
+
+      <div class="cart-actions" id="cartActions">
+        <a href="index.html" class="add-more-btn">+ Add More Products</a>
+        <button class="clear-btn" onclick="clearCart()">Clear All</button>
+      </div>
+    </div>
+
+    <!-- RIGHT: Enquiry Form -->
+    <div class="cart-right">
+      <h2 class="cart-title">Your <span class="accent">Details</span></h2>
+      <p class="cart-subtitle">Our team will contact you within 24 hours</p>
+
+      <div class="enquiry-form" id="enquiryForm">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" id="fname" placeholder="Your full name" oninput="autoSave()" />
+        </div>
+        <div class="form-group">
+          <label>Company Name *</label>
+          <input type="text" id="fcompany" placeholder="Your company / organisation" oninput="autoSave()" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="fphone" placeholder="10-digit mobile" oninput="autoSave()" />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="femail" placeholder="your@email.com" oninput="autoSave()" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>City / Location *</label>
+          <input type="text" id="fcity" placeholder="Your city" oninput="autoSave()" />
+        </div>
+        <div class="form-group">
+          <label>Additional Requirements</label>
+          <textarea id="fmessage" rows="3" placeholder="Any specific requirements, quantities, or notes..." oninput="autoSave()"></textarea>
+        </div>
+
+        <button class="submit-btn" id="submitBtn" onclick="submitEnquiry()">
+          <span id="submitText">🚀 Raise Query</span>
+        </button>
+        <p class="form-note">* No payment required. Our team will get in touch with pricing & availability.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© 2025 TeQniko Engineering, Faridabad. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
