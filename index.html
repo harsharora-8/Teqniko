@@ -12,24 +12,26 @@
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner">
-    <div class="logo">
-      <div class="logo-icon">⚙</div>
-      <div class="logo-text">
-        <span class="logo-main">TeQniko</span>
-        <span class="logo-sub">ENGINEERING</span>
-      </div>
-    </div>
-    <nav class="nav">
+    <a href="#" class="logo">
+      <img src="images/logo-teqniko.png" alt="TeQniko Engineering" class="logo-img" />
+      <span class="logo-sub">ENGINEERING</span>
+    </a>
+    <nav class="nav" id="mainNav">
       <a href="#products">Products</a>
       <a href="#about">About</a>
       <a href="#customers">Clients</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="cart-btn" onclick="window.location.href='cart.html'">
-      <span class="cart-icon">📋</span>
-      <span>Enquiry</span>
-      <span class="cart-count" id="cartCount">0</span>
-    </button>
+    <div class="header-right">
+      <button class="cart-btn" onclick="window.location.href='cart.html'">
+        <span class="cart-icon">📋</span>
+        <span>Enquiry</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -78,12 +80,7 @@
       <h2>Built on <span class="accent">Quality</span> & Precision</h2>
       <p>Established in 2019, TeQniko Engineering is a trusted trader and developer of industrial welding, abrasive, and pneumatic products. All products are developed using the latest technology and high-quality materials.</p>
       <p>We develop custom welding rods and machines as per application needs — delivering the highest quality at competitive prices.</p>
-      <div class="about-stats">
-        <div class="stat"><span>2019</span><label>Est.</label></div>
-        <div class="stat"><span>50+</span><label>Products</label></div>
-        <div class="stat"><span>10+</span><label>Clients</label></div>
-        <div class="stat"><span>4</span><label>Categories</label></div>
-      </div>
+
     </div>
     <div class="about-visual">
       <div class="about-card">
@@ -112,14 +109,15 @@
     <p>Trusted by leading industrial companies across India</p>
   </div>
   <div class="clients-grid">
-    <div class="client-card">Sonalika International</div>
-    <div class="client-card">Escorts Kubota Ltd.</div>
-    <div class="client-card">BSL</div>
-    <div class="client-card">Saket Fabs</div>
-    <div class="client-card">Ramco Steels Pvt. Ltd.</div>
-    <div class="client-card">Talbros</div>
-    <div class="client-card">Pranav Vikas India</div>
-    <div class="client-card">Panchal Engineering</div>
+    <div class="client-card"><img src="images/logo-sonalika.png" alt="Sonalika International" /></div>
+    <div class="client-card"><img src="images/logo-kubota.png" alt="Escorts Kubota Limited" /></div>
+    <div class="client-card"><img src="images/logo-bsl.png" alt="BSL" /></div>
+    <div class="client-card"><img src="images/logo-saket.png" alt="Saket Fabs" /></div>
+    <div class="client-card"><img src="images/logo-ramco.png" alt="Ramco Steels Pvt. Ltd." /></div>
+    <div class="client-card"><img src="images/logo-talbros.png" alt="Talbros" /></div>
+    <div class="client-card"><img src="images/logo-bharat.png" alt="Client" /></div>
+    <div class="client-card"><img src="images/logo-pranav.png" alt="Pranav Vikas India Pvt. Ltd." /></div>
+    <div class="client-card"><img src="images/logo-panchal.png" alt="Panchal" /></div>
   </div>
 </section>
 
