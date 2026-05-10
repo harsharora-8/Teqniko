@@ -4,10 +4,9 @@
 // ============================================
 
 // ============================================
-// ⚠️ REPLACE THIS WITH YOUR GOOGLE APPS SCRIPT URL
-// After deployment, paste the Web App URL here
+// The tracking/enquiry endpoint hosted on Vercel
 // ============================================
-const SHEET_URL = "https://script.google.com/macros/s/AKfycbxKWOW4ellc3C_S2ofJ3g8jZIMWuSjD_Lr7pxmlgwTOuTE-1iwugEHTXs9fGUGtLdqqvA/exec";
+const SHEET_URL = "/api/submit";
 
 // ============================================
 // PRODUCT DATA
@@ -316,10 +315,9 @@ function submitEnquiry() {
   // Save for thank you page
   localStorage.setItem("lastEnquiry", JSON.stringify({ name, company, phone, products, queryId }));
 
-  // Submit to Google Sheet
+  // Submit to Secure Vercel API
   fetch(SHEET_URL, {
     method: "POST",
-    mode: "no-cors",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload)
   }).then(() => {
@@ -355,7 +353,6 @@ function trackEvent(eventType, data = {}) {
   };
   fetch(SHEET_URL, {
     method: "POST",
-    mode: "no-cors",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload)
   }).catch(() => { });
